@@ -1,8 +1,14 @@
+@import "variables";
+
 .btn-default{
-	border: 2px solid #0d9b4b;
+	background-color: $blue-light;
 	margin: 100px auto;
 	display: block;
 	text-align: center;
-	padding: 20px 10px;
+	padding: $btn-padding-top $btn-padding-bottom;
+
+	&:hover{
+		background-color: $blue-light;
+	}
 
 }
