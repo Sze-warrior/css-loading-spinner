@@ -7,11 +7,15 @@
 	display: block;
 	text-align: center;
 	padding: $btn-padding-top $btn-padding-bottom;
-	@include transition(0.2s);
-
+	@include border-radius(8px);
+	@include transition(0.15s);
+	color: $btn-default-grey;
 
 	&:hover{
+		@include transition(0.15s);
 		background-color: $blue-dark;
+		color: $btn-grey-hover;
+		cursor: pointer;
 	}
 
 }
