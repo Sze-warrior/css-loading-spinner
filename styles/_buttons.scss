@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .btn-default{
 	background-color: $blue-light;
@@ -6,9 +7,11 @@
 	display: block;
 	text-align: center;
 	padding: $btn-padding-top $btn-padding-bottom;
+	@include transition(0.2s);
+
 
 	&:hover{
-		background-color: $blue-light;
+		background-color: $blue-dark;
 	}
 
 }
