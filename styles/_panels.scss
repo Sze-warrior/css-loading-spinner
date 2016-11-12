@@ -1,0 +1,48 @@
+@import "mixins";
+
+.card-panel{
+	@include border-radius($default-radius);
+	margin: 40px 10px;
+	background-color: white;
+
+	.panel-header{
+		background-color: $green;	
+    	border-top-left-radius: 5px;
+    	border-top-right-radius: 5px;
+    	padding: 15px 16px;
+
+		h3{
+			margin: 0;
+			font-size: $h3-default;
+			color: white;
+			font-weight: $font-weight-default;
+		    letter-spacing: 0.5px;
+		}
+	}
+
+	.panel-body{
+		padding: 25px 15px;
+
+		p{
+			margin: 0;
+		}
+	}
+
+	.panel-footer{
+        border-top: 1px solid $grey-border;
+	    padding: 20px 15px;
+	}
+}
+
+@media screen and (max-width: 699px){
+
+	.card-panel{
+
+		.panel-header{
+
+			h3{
+				font-size: $h3-default-mobile;
+			}
+		}
+	}
+}

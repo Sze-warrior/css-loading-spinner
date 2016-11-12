@@ -1,0 +1,26 @@
+@import "mixins";
+
+
+.btn-default{
+    border: 2px solid $green;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    max-width: 200px;
+    border-radius: 5px;
+    color: $green;
+    @include transition(.2s);
+
+    p{
+    	margin: 0;
+    	font-weight: $font-weight-plus;
+    }
+
+    &:hover{
+    	color: white;
+    	background-color: $green;
+    	cursor: pointer;
+    	@include transition(.2s);
+    }
+}

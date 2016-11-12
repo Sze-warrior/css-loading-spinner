@@ -1,0 +1,18 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "helvetica", "arial", "times new roman";
+	background-color: #3498db;
+}
+
+p{
+	font-size: $font-default;
+}
+
+.container{
+	margin: 0 auto;
+
+	&.container-700{
+		max-width: $max-700;
+	}
+}
