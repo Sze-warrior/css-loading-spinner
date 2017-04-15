@@ -40,6 +40,17 @@
 	}
 }
 
+.loading{
+	color: white;
+    position: fixed;
+    bottom: 49%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+}
+
 .spinner-position{
 	position: fixed;
 	top: 0;
